@@ -4,23 +4,20 @@
 
 {% block content %}
 
-<div id="content">
+<div id="content" align="center">
+	<h1>Welcome To RZS-Store</h1>
+	<h2>Add An Item To The Shop</h2><br>
 
-<br><br>
+	<form action="?" method="GET" onsubmit="addItem();return false;">
+		Item Name: <input type="text" id="itemName" value=""/> <br><br>
+		Quantity: <input type="text" id="itemQuantity" value=""/> <br><br>
+		Price: <input type="text" id="itemPrice" value=""/> <br><br>
+		<input class="button" type="submit" value="Submit" />
+	</form>
 
-<h1>Welcome To BasicStore Online</h1>
-<h2>Add An Item To The Shop</h2><br>
+	<br><br>
 
-<form action="?" method="GET" onsubmit="addItem();return false;">
-	Item Name: <input type="text" id="itemName" value=""/> <br><br>
-	Quantity: <input type="text" id="itemQuantity" value=""/> <br><br>
-	Price: <input type="text" id="itemPrice" value=""/> <br><br>
-	<input class="button" type="submit" value="Submit" />
-</form>
-
-<br><br>
-
-<p id="stat"></p>
+	<p id="stat"></p>
 
 </div>
 {% endblock %}

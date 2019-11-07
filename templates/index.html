@@ -5,25 +5,25 @@
 {% block content %}
 
 <div id="content" align="center">
-<h1>Welcome To RZS-Store</h1>
-<h2>Search For An Item</h2><br>
+    <h1>Welcome To RZS-Store</h1>
+    <h2>Search For An Item</h2><br>
 
-<form action="?" method="GET" onsubmit="search();return false;">
-	<input type="text" id="searchItem" value=""/>
-	<input class="button" type="submit" value="Search" />
-</form>
+    <form action="?" method="GET" onsubmit="search();return false;">
+        <input type="text" id="searchItem" value=""/>
+        <input class="button" type="submit" value="Search" />
+    </form>
 
-<br><br>
+    <br><br>
 
-<table id="results">
-<tr>
-    <th>Name</th>
-    <th>Quantity</th>
-    <th>Price</th>
-</tr>
-</table>
+    <table id="results">
+    <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    </table>
 
-<p id="stat"></p>
+    <p id="stat"></p>
 
 </div>
 {% endblock %}
