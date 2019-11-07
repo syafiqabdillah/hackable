@@ -89,7 +89,8 @@ if __name__ == "__main__":
             c.execute('INSERT INTO employees VALUES("itsjasonh", "{}")'.format(hash_pass("badword")))
             c.execute('INSERT INTO employees VALUES("theeguy9", "{}")'.format(hash_pass("badpassword")))
             c.execute('INSERT INTO employees VALUES("newguy29", "{}")'.format(hash_pass("pass123")))
+            c.execute('INSERT INTO employees VALUES("ANAS_GANTENG", "{}")'.format(hash_pass("gantengbatboy")))
             connection.commit()
             connection.close()
 
-    app.run(host='0.0.0.0') # runs on machine ip address to make it visible on netowrk
+    app.run(host='0.0.0.0', debug="on") # runs on machine ip address to make it visible on netowrk

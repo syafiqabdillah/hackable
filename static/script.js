@@ -35,9 +35,9 @@ function search(){
         $(".res").remove(); //remove previous results
 
         $(res).each(function(){
-            var r = "<tr class='res'><td>"+this['name']+"</td>";
-            r += "<td>"+this['quantity']+"</td>";
-            r += "<td>"+this['price']+"</td></tr>";
+            var r = "<tbody><tr class='res'><td><h2>"+this['name']+"</h2></td>";
+            r += "<td><h2>"+this['quantity']+"</h2></td>";
+            r += "<td><h2>"+this['price']+"</h2></td></tr><tbody>";
             $("#results").append(r);
         });
 
